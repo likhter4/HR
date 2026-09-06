@@ -1,0 +1,32 @@
+<Window x:Class="HRApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource AppTitle}" Height="650" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="{StaticResource BgBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <Border Grid.Column="0" Background="{StaticResource SidebarBrush}">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top" Text="{DynamicResource AppTitle}"
+                           Foreground="White" FontSize="17" FontWeight="Bold"
+                           TextWrapping="Wrap" Margin="16,24,16,24"/>
+
+                <Button DockPanel.Dock="Bottom" Content="{DynamicResource LangToggle}"
+                        Style="{StaticResource NavButton}" Click="ToggleLanguage_Click" Margin="0,0,0,20"/>
+
+                <StackPanel>
+                    <Button Content="{DynamicResource NavDashboard}" Style="{StaticResource NavButton}" Click="ShowDashboard_Click"/>
+                    <Button Content="{DynamicResource NavEmployees}" Style="{StaticResource NavButton}" Click="ShowEmployees_Click"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <!-- Content area -->
+        <ContentControl x:Name="MainContent" Grid.Column="1" Margin="20"/>
+    </Grid>
+</Window>

@@ -1,0 +1,58 @@
+<UserControl x:Class="HRApp.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel>
+        <!-- KPI Cards -->
+        <UniformGrid Rows="1" Columns="4" Margin="0,0,0,20">
+            <Border Background="White" CornerRadius="8" Margin="0,0,10,0" Padding="16">
+                <StackPanel>
+                    <TextBlock x:Name="TxtTotal" Style="{StaticResource KpiNumber}"/>
+                    <TextBlock Text="{DynamicResource KpiTotal}" Style="{StaticResource KpiLabel}"/>
+                </StackPanel>
+            </Border>
+            <Border Background="White" CornerRadius="8" Margin="0,0,10,0" Padding="16">
+                <StackPanel>
+                    <TextBlock x:Name="TxtActive" Style="{StaticResource KpiNumber}"/>
+                    <TextBlock Text="{DynamicResource KpiActive}" Style="{StaticResource KpiLabel}"/>
+                </StackPanel>
+            </Border>
+            <Border Background="White" CornerRadius="8" Margin="0,0,10,0" Padding="16">
+                <StackPanel>
+                    <TextBlock x:Name="TxtInactive" Style="{StaticResource KpiNumber}"/>
+                    <TextBlock Text="{DynamicResource KpiInactive}" Style="{StaticResource KpiLabel}"/>
+                </StackPanel>
+            </Border>
+            <Border Background="White" CornerRadius="8" Padding="16">
+                <StackPanel>
+                    <TextBlock x:Name="TxtDepartments" Style="{StaticResource KpiNumber}"/>
+                    <TextBlock Text="{DynamicResource KpiDepartments}" Style="{StaticResource KpiLabel}"/>
+                </StackPanel>
+            </Border>
+        </UniformGrid>
+
+        <!-- Chart -->
+        <Border Background="White" CornerRadius="8" Padding="20">
+            <StackPanel>
+                <TextBlock Text="{DynamicResource ChartByDept}" FontSize="16" FontWeight="Bold" Margin="0,0,0,16"/>
+                <ItemsControl x:Name="ChartItems">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="220"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Width="90" Margin="10,0" VerticalAlignment="Bottom">
+                                <TextBlock Text="{Binding Count}" HorizontalAlignment="Center" FontWeight="Bold"/>
+                                <Border Height="{Binding BarHeight}" Background="{StaticResource PrimaryBrush}"
+                                        CornerRadius="4,4,0,0" VerticalAlignment="Bottom"/>
+                                <TextBlock Text="{Binding Department}" HorizontalAlignment="Center"
+                                           TextWrapping="Wrap" TextAlignment="Center" Margin="0,6,0,0" FontSize="12"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</UserControl>

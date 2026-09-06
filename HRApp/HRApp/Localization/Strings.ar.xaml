@@ -1,0 +1,34 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="AppTitle">نظام إدارة الموارد البشرية</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="NavDashboard">لوحة التحكم</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="NavEmployees">الموظفون</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="LangToggle">English</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiTotal">إجمالي الموظفين</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiActive">نشط</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiInactive">غير نشط</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiDepartments">الأقسام</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ChartByDept">الموظفون حسب القسم</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnAdd">إضافة موظف</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnEdit">تعديل</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnDelete">حذف</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnSave">حفظ</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnCancel">إلغاء</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColNameEn">الاسم (إنجليزي)</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColNameAr">الاسم (عربي)</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColDepartment">القسم</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColPosition">الوظيفة</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColGender">الجنس</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColHireDate">تاريخ التعيين</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColSalary">الراتب</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColStatus">الحالة</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColPhone">الهاتف</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColEmail">البريد الإلكتروني</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="EditTitle">بيانات الموظف</system:String>
+
+</ResourceDictionary>

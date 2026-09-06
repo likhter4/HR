@@ -1,0 +1,34 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="AppTitle">HR Management System</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="NavDashboard">Dashboard</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="NavEmployees">Employees</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="LangToggle">العربية</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiTotal">Total Employees</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiActive">Active</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiInactive">Inactive</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="KpiDepartments">Departments</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ChartByDept">Employees by Department</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnAdd">Add Employee</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnEdit">Edit</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnDelete">Delete</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnSave">Save</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="BtnCancel">Cancel</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColNameEn">Name (English)</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColNameAr">Name (Arabic)</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColDepartment">Department</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColPosition">Position</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColGender">Gender</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColHireDate">Hire Date</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColSalary">Salary</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColStatus">Status</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColPhone">Phone</system:String>
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="ColEmail">Email</system:String>
+
+    <system:String xmlns:system="clr-namespace:System;assembly=mscorlib" x:Key="EditTitle">Employee Details</system:String>
+
+</ResourceDictionary>
